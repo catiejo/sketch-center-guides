@@ -1,0 +1,24 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "Draw center guides",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ],
+    "title" : "Draw center guides"
+  },
+  "identifier" : "com.example.sketch.180f29ba-aa4d-47c5-b4df-40da91a831ca",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "Draw center guides"
+}

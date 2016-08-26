@@ -1,0 +1,14 @@
+var onRun = function(context) {
+  log('This script adds a center line to all of your artboards.');
+var page = context.document;
+var artboards = page.artboards();
+
+for (var i=0; i < artboards.count(); i++) {
+  var ruler = artboards[i].horizontalRulerData();
+  while (ruler.numberOfGuides() !== 0) {
+    ruler.removeGuideAtIndex(0);
+  }
+  var center = artboards[i].frame().width() / 2.0;
+  ruler.addGuideWithValue(center);
+}
+};
